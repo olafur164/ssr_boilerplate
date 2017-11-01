@@ -7,14 +7,14 @@
 `git clone https://github.com/olafur164/ssr_boilerplate.git`
 
 ### Install Dependencies
-
+`yarn install`
 ### Personalize config.json
 
 In the root directory, you'll find config.json
 
 Here are the constants it contains:
-
-`{
+```js
+{
   "expressPort": "4000",
   "fbAppId": "",
   "author": "Ólafur Hólm Eyþórsson",
@@ -24,7 +24,8 @@ Here are the constants it contains:
   "jwtSecret": "PickAComplexString1337",
   "GITHUB_CLIENT_ID": "ENTER_YOUR_APP'S_CLIENT_ID",
   "GITHUB_CLIENT_SECRET": "ENTER_YOUR_APP'S_CLIENT_SECRET"
-}`
+}
+```
 
 ### Build and Run The Application
 
