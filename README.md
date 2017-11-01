@@ -1,0 +1,1 @@
+# React Server side rendering boilerplate
