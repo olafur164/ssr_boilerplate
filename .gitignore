@@ -5,3 +5,4 @@ config.json
 public/*
 !public/.gitkeep
 .vscode/*
+.DS_Store
