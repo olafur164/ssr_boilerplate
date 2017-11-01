@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
+import { Helmet } from 'react-helmet'
 
 class Home extends Component {
   render () {
     return (
-      <h1>Home</h1>
+      <div>
+        <Helmet>
+          <title>Home</title>
+        </Helmet>
+        <h1>Home</h1>
+      </div>
     )
   }
 }

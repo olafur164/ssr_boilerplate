@@ -34,6 +34,7 @@ const author = config.author
 
 
 const express = require('express')
+const compression = require('compression')
 const helmet = require('helmet')
 const bodyParser = require('body-parser')
 
@@ -42,6 +43,7 @@ const app = express()
 
 
 // Middleware
+app.use(compression())
 app.use(helmet())
 app.use(bodyParser.json())
 

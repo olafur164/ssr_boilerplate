@@ -1,17 +1,8 @@
 import React, { Component } from 'react'
 import { NavLink, Link } from 'react-router-dom'
-import { connect } from 'react-redux'
-import GuestLinks from './GuestLinks'
-import AuthenticatedLinks from './AuthenticatedLinks'
-import { object } from 'prop-types'
 
 class NavBar extends Component {
-  constructor (props) {
-    super(props)
-  }
-
   render () {
-    let displayLinks
     return (
       <nav className='navbar navbar-toggleable-md navbar-inverse bg-inverse'>
         <button
@@ -52,9 +43,4 @@ class NavBar extends Component {
     )
   }
 }
-
-NavBar.propTypes = {
-  location: object.isRequired
-}
-
 export default NavBar
