@@ -29,6 +29,8 @@ const template = _template(baseTemplate)
 
 // App configuration
 const config = require('./config')
+const fbAppId = config.fbAppId
+const author = config.author
 
 
 const express = require('express')
@@ -83,7 +85,7 @@ app.use((req, res) => {
   if (context.url) {
     res.redirect(context.url)
   } else {
-    res.status(200).send(template({ body }))
+    res.status(200).send(template({ fbAppId, author, body}))
   }
   /*
   const body = ReactDOMServer.renderToString(

@@ -2,7 +2,6 @@ import React from 'react'
 import { Route, Switch } from 'react-router'
 import Home from '../../containers/Home'
 import NotFound from './NotFound'
-import { bool } from 'prop-types'
 
 /**
  * Run `yarn run compile-routes` after altering any Routes in this file.
@@ -18,9 +17,6 @@ const Routes = () => {
       <Route component={NotFound} />
     </Switch>
   )
-}
-
-Routes.propTypes = {
 }
 
 export default Routes

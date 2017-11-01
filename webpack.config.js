@@ -60,11 +60,6 @@ module.exports = function () {
     },
     plugins: [
       new ExtractTextPlugin('/css/style.css'),
-      new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery',
-        Tether: 'tether'
-      }),
       new webpack.optimize.CommonsChunkPlugin({
         name: 'vendor',
         filename: 'vendor.js',

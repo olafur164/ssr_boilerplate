@@ -17,11 +17,10 @@ module.exports = function (env) {
         }
       }),
       new webpack.optimize.UglifyJsPlugin({
-        beautify: false,
+        beautify: true,
         compress: {
           screw_ie8: true
-        },
-        comments: false
+        }
       }),
       new CompressionPlugin({
         asset: '[path].gz[query]',
