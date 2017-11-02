@@ -32,15 +32,24 @@ const config = require('./config')
 const fbAppId = config.fbAppId
 const author = config.author
 
-
+const connectMongoose = require('./src/server/db/connectMongoose')
+/*
+const MONGO_URI = process.env.NODE_ENV === 'production'
+  ? config.mongoUriProduction
+  : config.mongoUriDev
+*/
+const MONGO_URI = config.mongoUriDev
 const express = require('express')
 const compression = require('compression')
 const helmet = require('helmet')
 const bodyParser = require('body-parser')
 
+
 const PORT = process.env.PORT || config.expressPort
 const app = express()
 
+const student = require('./src/server/routes/student')
+connectMongoose(MONGO_URI)
 
 // Middleware
 app.use(compression())
@@ -49,9 +58,7 @@ app.use(bodyParser.json())
 
 
 // Routes
-app.use('/test', (req, res) => {
-  res.send('test')
-})
+app.use('/api/student', student)
 app.use('/public', express.static('./public'))
 
 /**
