@@ -36,24 +36,4 @@ router.post('/add', (req, res) => {
     })
 
 })
-
-/**
- * GET '/api/user/username/:username'
- *
- * Checks a given username for uniqueness. If the username passed
- * exists, isUnique will be false, otherwise true
- *
- * @returns { isUnique: bool }
- */
-
-router.get('/student/:student_id', (req, res) => {
-  const student_id = req.params.student_id
-  verifyUniqueStudentID(student_id)
-    .then(result => res.json(result))
-    .catch(err => {
-      console.error('verifyUniqueUsername failed:', err)
-      return res.status(500).json({ error: err })
-    })
-})
-
 module.exports = router
