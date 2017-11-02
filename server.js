@@ -33,12 +33,10 @@ const fbAppId = config.fbAppId
 const author = config.author
 
 const connectMongoose = require('./src/server/db/connectMongoose')
-/*
 const MONGO_URI = process.env.NODE_ENV === 'production'
   ? config.mongoUriProduction
   : config.mongoUriDev
-*/
-const MONGO_URI = config.mongoUriDev
+  
 const express = require('express')
 const compression = require('compression')
 const helmet = require('helmet')
