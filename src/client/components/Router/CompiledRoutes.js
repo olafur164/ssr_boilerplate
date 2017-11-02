@@ -14,11 +14,13 @@ var _Home = require('../../containers/Home');
 
 var _Home2 = _interopRequireDefault(_Home);
 
+var _Students = require('../../containers/Students');
+
+var _Students2 = _interopRequireDefault(_Students);
+
 var _NotFound = require('./NotFound');
 
 var _NotFound2 = _interopRequireDefault(_NotFound);
-
-var _propTypes = require('prop-types');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34,10 +36,9 @@ var Routes = function Routes() {
     _reactRouter.Switch,
     null,
     _react2.default.createElement(_reactRouter.Route, { exact: true, path: '/', component: _Home2.default }),
+    _react2.default.createElement(_reactRouter.Route, { exact: true, path: '/students', component: _Students2.default }),
     _react2.default.createElement(_reactRouter.Route, { component: _NotFound2.default })
   );
 };
-
-Routes.propTypes = {};
 
 exports.default = Routes;

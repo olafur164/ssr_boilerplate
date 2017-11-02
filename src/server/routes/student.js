@@ -3,9 +3,7 @@ const Student = require('../db/models/Student')
 const router = express.Router()
 
 /**
- * GET '/api/user/'
- *
- * Gets a logged in user's username, email, password
+ * GET '/api/student'
  */
 
 router.get('/', (req, res) => {
@@ -16,6 +14,12 @@ router.get('/', (req, res) => {
     }
   ))
 })
+
+/**
+ * GET '/api/student/add'
+ * 
+ * Adding a fake student for now.
+ */
 
 router.post('/add', (req, res) => {
   const student = new Student({

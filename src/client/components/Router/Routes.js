@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router'
 import Home from '../../containers/Home'
+import Students from '../../containers/Students'
 import NotFound from './NotFound'
 
 /**
@@ -14,6 +15,7 @@ const Routes = () => {
   return (
     <Switch>
       <Route exact path='/' component={Home} />
+      <Route exact path='/students' component={Students} />
       <Route component={NotFound} />
     </Switch>
   )
