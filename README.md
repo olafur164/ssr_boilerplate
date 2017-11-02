@@ -40,4 +40,4 @@ To build and watch the client side JavaScript bundles with Webpack 2, run:
 
 To start the server, open a separate tab or terminal window and run:
 
-`yarn run server`
+`yarn server`
