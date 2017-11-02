@@ -1,5 +1,15 @@
 # React Server side rendering boilerplate
 
+## What's included
+
+- React
+- React Router 4
+- Redux
+- Webpack 2
+- PostCSS
+- Express
+- Mongoose
+
 ## Quick Start
 
 ### Clone this repo
