@@ -10,20 +10,19 @@
 `yarn install`
 ### Personalize config.json
 
-In the root directory, you'll find config.json
+In the root directory, you'll find config.sample.json
+
+rename it to config.json and fill the constants matching your criteria
 
 Here are the constants it contains:
 ```js
 {
   "expressPort": "4000",
-  "fbAppId": "",
-  "author": "Ólafur Hólm Eyþórsson",
+  "fbAppId": "ENTER_YOUR_FB_APP_ID",
+  "author": "ENTER_YOUR_NAME_OR_SHIT",
   "domain": "http://localhost:4000",
-  "mongoUriDev": "mongodb://localhost:27017/react-ssr-boiler",
-  "mongoUriProduction": "ENTER_YOUR_PRODUCTION_MONGO_URI_FROM_MLAB_OR_ELSEWHERE",
-  "jwtSecret": "PickAComplexString1337",
-  "GITHUB_CLIENT_ID": "ENTER_YOUR_APP'S_CLIENT_ID",
-  "GITHUB_CLIENT_SECRET": "ENTER_YOUR_APP'S_CLIENT_SECRET"
+  "mongoUriDev": "mongodb://localhost:27017/pumba",
+  "mongoUriProduction": "ENTER_YOUR_PRODUCTION_MONGO_URI_FROM_MLAB_OR_ELSEWHERE"
 }
 ```
 
